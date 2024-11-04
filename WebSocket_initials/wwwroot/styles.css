@@ -1,0 +1,100 @@
+﻿
+@font-face {
+    font-family: 'DanaYadAlefAlefAlef-Normal'; /* השם שנבחר לפונט */
+    src: url('/DanaYadAlefAlefAlef-Normal.otf') format('opentype'); /* נתיב הפונט והפורמט שלו */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* עיצוב הרקע של גוף העמוד */
+body {
+    background-image: url('/backGroundPic.jpg'); /* הנתיב מה-wwwroot */
+    background-size: cover;
+    כיסוי מלא של העמוד background-position: center;
+    מיקום במרכז background-repeat: no-repeat;
+    מניעת חזרה על התמונה display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'DanaYadAlefAlefAlef-Normal', sans-serif; /* שימוש בפונט בעמוד */
+    margin: 0;
+}
+
+
+/* מיקום התוכן במרכז עם גבולות עיצוב אלגנטיים */
+.container {
+    background-color:rgba(0, 0, 0, 0.2); /* רקע שקוף */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: right;
+}
+
+/* כותרות */
+h1, h2 {
+    color: burlywood;
+    font-family: 'DanaYadAlefAlefAlef-Normal', sans-serif; /* שימוש בפונט בעמוד */
+    direction: rtl;
+}
+
+/* שדות קלט וכפתור */
+.input-area label,
+.input-area input,
+.input-area button {
+    display: block;
+    width: 100%;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    direction: rtl;
+    font-family: 'DanaYadAlefAlefAlef-Normal', sans-serif; /* שימוש בפונט בעמוד */
+}
+
+.input-area input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: navajowhite;
+    color: black; /* צבע הטקסט */
+}
+
+.input-area button {
+    background-color: #333333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .input-area button:hover {
+        background-color: #555555;
+    }
+
+/* הודעות שגיאה */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* רשימת ראשי התיבות */
+.initials-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .initials-list li {
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: navajowhite;
+        border-bottom: 1px solid #ddd;
+        direction: rtl;
+    }
+
+
+
