@@ -1,14 +1,14 @@
 ﻿
 @font-face {
-    font-family: 'DanaYadAlefAlefAlef-Normal'; /* השם שנבחר לפונט */
-    src: url('/DanaYadAlefAlefAlef-Normal.otf') format('opentype'); /* נתיב הפונט והפורמט שלו */
+    font-family: '/DanaYadAlefAlefAlef-Normal'; /* השם שנבחר לפונט */
+    src: url('/pages/DanaYadAlefAlefAlef-Normal.otf') format('opentype'); /* נתיב הפונט והפורמט שלו */
     font-weight: normal;
     font-style: normal;
 }
 
 /* עיצוב הרקע של גוף העמוד */
 body {
-    background-image: url('/backGroundPic.jpg'); /* הנתיב מה-wwwroot */
+    background-image: url('/pages/backGroundPic.jpg'); /* הנתיב מה-wwwroot */
     background-size: cover;
     כיסוי מלא של העמוד background-position: center;
     מיקום במרכז background-repeat: no-repeat;
