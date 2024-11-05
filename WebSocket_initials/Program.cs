@@ -14,7 +14,7 @@ app.UseWebSockets();
 
 app.MapGet("/", async context =>
 {
-    context.Response.Redirect("/initials.html");
+    context.Response.Redirect("/html/initials.html");
     await context.Response.CompleteAsync();
 });
 app.Map("/ws", async context =>
